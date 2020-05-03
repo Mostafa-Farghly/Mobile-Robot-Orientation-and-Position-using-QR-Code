@@ -5,15 +5,13 @@
 
 # ## <font color="gray">Mobile Robot Orientation and Position using QR Code</font>
 
-# ## <font color ="Gray"><strong><u>Team members:</u></strong></font><font color="SlateBlue"><br><ol><li>Mostafa Alaa<li>Mina Hany<li>Micheal Hesham</ol></font>
-
 # ## For mobile robots, a QR code (that has the coordinates of a point) fixed on the ground can be an easy way to determine the robot's position when it scans it. However, determining the robot's orientation is not that easy. <font color="blue">So the core of our project is to determine the orientation of our robot in degrees.</font>
 
 # ## Note that the orientation of the robot is calculated in degrees and is measured from the vertical axis. <font color="blue">(When the robot scans the QR code in the normal position, its orientation is zero degrees).<font>
 
 # <img src="orientations.png">
 
-# In[ ]:
+# In[1]:
 
 
 import matplotlib.pyplot as plt
@@ -28,7 +26,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 from math import pow, sqrt, atan, pi
 
 
-# In[ ]:
+# In[2]:
 
 
 cap = cv2.VideoCapture(0)
@@ -46,7 +44,7 @@ while(True):
         break
 
 
-# In[ ]:
+# In[3]:
 
 
 print(len(barcode))
@@ -58,7 +56,7 @@ img_gray = frame[y:y+w, x:x+h]
 plt.imshow(img_gray, cmap="gray")
 
 
-# In[ ]:
+# In[4]:
 
 
 # Convert to gray
@@ -70,7 +68,7 @@ img_gray = cv2.adaptiveThreshold(img_gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, 
 plt.imshow(img_gray, cmap="gray")
 
 
-# In[ ]:
+# In[5]:
 
 
 # Get labels and stats
@@ -84,17 +82,17 @@ print(stats)
 
 # ## <font color="red">* Set Area Threshold Here *</font>
 
-# In[ ]:
+# In[8]:
 
 
 # Squares area threshold
-min_area = 699
-max_area = 733
+min_area = 1080
+max_area = 1133
 
 
 # ## <font color="red"> **************************************** </font>
 
-# In[ ]:
+# In[9]:
 
 
 # Create copy of stats and image
@@ -125,7 +123,7 @@ for j in range(len(stats)):
 plt.imshow(image, cmap="gray")
 
 
-# In[ ]:
+# In[10]:
 
 
 # List to store line point and its length
@@ -144,7 +142,7 @@ for i in range(len(squares)):
         line_len.append([(x1, y1), (x2, y2), (line)])
 
 
-# In[ ]:
+# In[11]:
 
 
 # Find longest line
@@ -176,7 +174,7 @@ ym = int(round((y2 + y1) / 2))
 xm = int(round((x2 + x1) / 2))
 
 
-# In[ ]:
+# In[12]:
 
 
 # Calculate slope
