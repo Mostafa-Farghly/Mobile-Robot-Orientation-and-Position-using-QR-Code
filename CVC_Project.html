@@ -13091,14 +13091,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="For-mobile-robots,-a-QR-code-(that-has-the-coordinates-of-a-point)-fixed-on-the-ground-can-be-an-easy-way-to-determine-the-robot's-position-when-it-scans-it.-However,-determining-the-robot's-orientation-is-not-that-easy.-So-the-core-of-our-project-is-to-determine-the-orientation-of-our-robot-in-degrees.">For mobile robots, a QR code (that has the coordinates of a point) fixed on the ground can be an easy way to determine the robot's position when it scans it. However, determining the robot's orientation is not that easy. <font color="blue">So the core of our project is to determine the orientation of our robot in degrees.</font><a class="anchor-link" href="#For-mobile-robots,-a-QR-code-(that-has-the-coordinates-of-a-point)-fixed-on-the-ground-can-be-an-easy-way-to-determine-the-robot's-position-when-it-scans-it.-However,-determining-the-robot's-orientation-is-not-that-easy.-So-the-core-of-our-project-is-to-determine-the-orientation-of-our-robot-in-degrees.">&#182;</a></h2>
+<h2 id="For-mobile-robots,-a-QR-code-(that-has-the-coordinates-of-a-point)-fixed-on-the-ground-can-be-an-easy-way-to-determine-the-robot's-position-when-it-scans-it.-However,-determining-the-robot's-orientation-quite-straight-forward.-So-the-core-of-our-project-is-to-determine-the-orientation-of-our-robot-in-degrees.">For mobile robots, a QR code (that has the coordinates of a point) fixed on the ground can be an easy way to determine the robot's position when it scans it. However, determining the robot's orientation quite straight forward. <font color="blue">So the core of our project is to determine the orientation of our robot in degrees.</font><a class="anchor-link" href="#For-mobile-robots,-a-QR-code-(that-has-the-coordinates-of-a-point)-fixed-on-the-ground-can-be-an-easy-way-to-determine-the-robot's-position-when-it-scans-it.-However,-determining-the-robot's-orientation-quite-straight-forward.-So-the-core-of-our-project-is-to-determine-the-orientation-of-our-robot-in-degrees.">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2>Note that the orientation of the robot is calculated in degrees and is measured from the vertical axis. <font color="blue">(When the robot scans the QR code in the normal position, its orientation is zero degrees).<font></h2>
+<h2>Note that the orientation of the robot is calculated in degrees and is measured from the vertical axis in clockwise direction. <font color="blue">(When the robot scans the QR code in the normal position, its orientation is zero degrees).<font></h2>
 
 </div>
 </div>
@@ -13419,7 +13419,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="We-use-connected-components-analysis-to-get-the-position-of-the-three-squares-of-the-QR-code,-so-we-need-to-threshold-to-their-areas.">We use connected components analysis to get the position of the three squares of the QR code, so we need to threshold to their areas.<a class="anchor-link" href="#We-use-connected-components-analysis-to-get-the-position-of-the-three-squares-of-the-QR-code,-so-we-need-to-threshold-to-their-areas.">&#182;</a></h2><h2 id="Note-that-this-step-needs-only-to-be-done-once,-since-the-will-be-fixed-in-a-specific-position-on-the-robot."><font color="blue">Note that this step needs only to be done once, since the will be fixed in a specific position on the robot.</font><a class="anchor-link" href="#Note-that-this-step-needs-only-to-be-done-once,-since-the-will-be-fixed-in-a-specific-position-on-the-robot.">&#182;</a></h2>
+<h2 id="We-use-connected-components-analysis-to-get-the-position-of-the-three-squares-of-the-QR-code,-so-we-need-to-threshold-to-their-areas.">We use connected components analysis to get the position of the three squares of the QR code, so we need to threshold to their areas.<a class="anchor-link" href="#We-use-connected-components-analysis-to-get-the-position-of-the-three-squares-of-the-QR-code,-so-we-need-to-threshold-to-their-areas.">&#182;</a></h2><h2 id="Note-that-this-step-needs-only-to-be-done-once,-since-the-camera-will-always-be-fixed-in-a-specific-position-on-the-robot."><font color="blue">Note that this step needs only to be done once, since the camera will always be fixed in a specific position on the robot.</font><a class="anchor-link" href="#Note-that-this-step-needs-only-to-be-done-once,-since-the-camera-will-always-be-fixed-in-a-specific-position-on-the-robot.">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13645,19 +13645,6 @@ b&#39;(2, 7)&#39;
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
 
